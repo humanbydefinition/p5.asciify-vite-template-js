@@ -13,6 +13,6 @@
   },
   "dependencies": {
     "p5": "^1.11.3",
-    "p5.asciify": "^0.7.1"
+    "p5.asciify": "^0.8.2"
   }
 }

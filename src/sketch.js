@@ -2,8 +2,6 @@ import p5 from 'p5';
 import { p5asciify } from 'p5.asciify';
 
 const sketch = new p5((p) => {
-    
-    p5asciify.instance(p);
 
     p.setup = () => {
         p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL);
@@ -18,7 +16,7 @@ const sketch = new p5((p) => {
     };
 
     p.setupAsciify = () => {
-        p5asciify.renderers().get("brightness").update({
+        p5asciify.asciifier().renderers().get("brightness").update({
             characters: " .,:;i1tfLCG08@",
             invertMode: false,
         });
